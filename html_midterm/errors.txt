@@ -1,0 +1,13 @@
+Lauren Kerrigan and Natasha Terekhova
+
+find_errors_2.html 
+
+26. line 1 - incomplete !DOCTYPE html tag
+27. line 5 - missing closing head tag
+28. line 5 - opening body tag is missing >  
+29. line 16 - missing closing body tag
+30. line 16 - closing html tag is missing an 'l' 
+31. line 11 - missing closing div tag 
+32. line 8 - missing closing strong tag after 'important'
+33. line 10 - 'image_2.jpg' is missing an underscore
+34. line 10 - 
