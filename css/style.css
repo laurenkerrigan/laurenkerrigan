@@ -6,20 +6,20 @@ body {
   
   html {
     font-family: 'Helvetica neue', Arial, 'sans serif';
-    font-size: 10px;
+    font-size: 1em;
     background-color: #ccc;
   }
   
   /* Selectors to be matched up with rulesets */
   
-  .card article img
+ /* .card article img 
   .card footer
   .card header
-  .card
+  .card */
   
   /* Rulesets to be matched up with selectors */
   
-   .card {
+    .card {
     width: 35em;
     height: 22em;
     margin: 5em auto;
@@ -28,17 +28,98 @@ body {
     border-radius: 1.5em;
   }
   
-  .header {
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  header {
+    /*background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));*/
     border-radius: 1.5em 1.5em 0 0;
+    font-size: 2em;
+    line-height: 0.5em;
+    padding: 1em
+    max-height: 3em;
+    margin: 0em;
   }
   
-  .footer {
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  article {
+    color: #ccc;
+    margin: 0em;
+    max-height: 12em;
+    background-color: rgb(0 0 0/50%);
+    padding: 0.5em;
+  }
+
+  footer {
+    /*background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));*/
     border-radius: 0 0 1.5em 1.5em;
+    float: center;
+    font-size: 1.5em;
+    padding: 0.8em;
+    max-height: 3em;
   }
   
+
   img {
-    max-height: 100%
     float: right;
+    max-height: 100%
   }
+
+  body {
+    margin: 0;
+  }
+  
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 1em;
+    background-color: #ccc;
+  }
+  
+  /* Selectors to be matched up with rulesets */
+  
+ /* .card article img 
+  .card footer
+  .card header
+  .card */
+  
+  /* Rulesets to be matched up with selectors */
+  
+    .card2 {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: rgb(0, 145, 255);
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+  }
+  
+  header {
+    /*background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));*/
+    border-radius: 1.5em 1.5em 0 0;
+    font-size: 2em;
+    line-height: 0.5em;
+    padding: 1em
+    max-height: 3em;
+    margin: 0em;
+  }
+  
+  article {
+    color: #000000;
+    margin: 0em;
+    max-height: 12em;
+    background-color: rgb(0 0 0/50%);
+    padding: 0.5em;
+  }
+
+  footer {
+    /*background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));*/
+    border-radius: 0 0 1.5em 1.5em;
+    float: center;
+    font-size: 1.5em;
+    padding: 0.8em;
+    max-height: 3em;
+  }
+  
+
+  img {
+    float: right;
+    max-height: 100%
+  }
+
+
