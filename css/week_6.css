@@ -10,3 +10,8 @@ html {
     color: rgb(0, 229, 255);
     border-style: dashed 10 px;
 }
+
+#first_div {
+    position: relative;
+    left: 200 px; 
+}
