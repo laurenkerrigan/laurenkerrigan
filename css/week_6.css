@@ -1,0 +1,12 @@
+html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 1em;
+}
+.purple {
+    color: purple;
+}
+
+#blue {
+    color: rgb(0, 229, 255);
+    border-style: dashed 10 px;
+}
