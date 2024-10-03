@@ -8,7 +8,7 @@
   
   body {
     margin: 0;
-    background: #ccc;
+    background: #ffffff;
   }
   #top {
     float:top;
@@ -29,7 +29,7 @@
   shadow: 1px 1px 1px black;
 }
   h1 {
-    position: absolute;
+    position: top;
     top: 12mm;
     left: 20mm;
     width: 128px;
@@ -40,6 +40,9 @@
     padding: 44px 0;
     color: white;
     text-shadow: 1px 1px 1px black;
+    background-image: url(logo.png);
+    filter: drop-shadow(2px 2px black);
+    
   }
   
   address {
