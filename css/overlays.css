@@ -1,7 +1,28 @@
-body {
-    
+/* body {
+    z-index: 0;
 }
 
 .newslogo {
-    
-}
+    position: absolute;
+    top: 15;
+    left: 15;
+    z-index: 1;
+} */
+  .charlotte 
+        {
+            position: relative;
+            top: 0;
+            left; 0;
+            height; 600;
+        }
+        .newslogo 
+        {
+            position; relative;
+            top; 15px;
+            left: 15px;
+        }
+        .newsheadline 
+        {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
