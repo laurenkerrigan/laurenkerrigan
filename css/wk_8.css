@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+}
+ul {
+    list-style: none; /*gets rid of bullets*/
+    display: flex;
+    background-color:black;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+li {
+    text-decoration: none; /*gets rid of underline*/
+    color: white;
+    padding: 10px 30px; /*first value: top/bottom, second left/right*/
+}
+
+li:hover{
+    background-color:aquamarine;
+}
