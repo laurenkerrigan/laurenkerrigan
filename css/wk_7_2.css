@@ -30,6 +30,7 @@
  #my_grid{
     display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-template-rows: 2fr 1fr;
     width: 100vw;
     /*justify-content: center, space-evenly, space-between, space-around, start, end*/
     justify-content: end;
