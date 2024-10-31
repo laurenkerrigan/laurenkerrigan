@@ -11,7 +11,7 @@ document.getElementById("my_head").addEventListener("click", function(e){
     alert("clicked the h1");
     document.getElementById("paragraph").innerHTML = "this is the new text";
     document.getElementById("paragraph").style.color = "blue";
-    document.getElementById("image").src = "images/unicorns/unicorn (2).png";
+    document.getElementById("image").src = "../img/unicorn (2).png";
 })
 
 console.log(document.getElementById("my_head").innerHTML);
