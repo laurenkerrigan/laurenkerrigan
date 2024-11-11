@@ -1,0 +1,56 @@
+h1 {
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 100%;  /* Make full image responsive */
+  max-width: 640px;
+  height: auto;  /* Allow height to adjust based on width */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  /* Match the width of the image */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  border: 0;
+  background: rgba(150, 150, 150, 0.6);
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.thumb-bar {
+  display: flex;
+  flex-wrap: wrap;  /* Allow images to wrap onto a new line */
+  gap: 10px; /* Space between images */
+  justify-content: center; /* Center the thumbnails */
+  margin-top: 10px;
+}
+
+.thumb-bar img {
+  width: 100px;  /* Set a specific size for thumbnails */
+  height: auto;  /* Maintain aspect ratio */
+  cursor: pointer;
+}
+
+.full-img img {
+  width: 100%;  /* Ensure the displayed image fits within the full-img container */
+  height: auto;
+}
