@@ -1,29 +1,39 @@
 let myData = {};
 
 function fetchData() {
-    fetch("https://corsproxy.io?https://xkcd.com/614/info.0.json");
+    // Generate a random comic number between 1 and 3000
+    const randomComicNumber = Math.floor(Math.random() * 3000) + 1;
+    const url = `https://corsproxy.io/?https://xkcd.com/${randomComicNumber}/info.0.json`;
 
-    .then(res => {
-        if (res.ok) {
-        return res.json();
-    }
+    fetch(url)
+        .then(res => {
+            if (res.ok) {
+                return res.json();
+            } else {
+                throw new Error(`Error: ${res.status}`);
+            }
+        })
+        .then(data => {
+            myData = data;
 
-    else {
-        console.log(res);
-    }
-    })
+            // Update the title
+            document.getElementById("title").innerHTML = myData.title;
 
-    .then(res => {
-        myData = res;
-        console.log(myData);
+            // Update the comic image
+            const comicImage = document.getElementById("comic");
+            comicImage.src = myData.img;
+            comicImage.alt = myData.alt;
 
-        //title
-        document.getElementById("title").innerHTML
-        //displayingthe comic
-        document.getElementById("comic").src = myData.img;
-        //document.getElementById("comic").
-    })
-
+            // Update the publication date
+            document.getElementById("date").innerHTML = `Published on: ${myData.year}-${myData.month}-${myData.day}`;
+        })
+        .catch(err => {
+            console.error(err);
+        });
 }
 
+// Add event listener to the button
+document.getElementById("fetchComicButton").addEventListener("click", fetchData);
+
+// Fetch a comic initially
 fetchData();
