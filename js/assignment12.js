@@ -1,34 +1,26 @@
 let myData = {};
 
 function fetchData() {
-    // Generate a random comic number between 1 and 3000
     const randomComicNumber = Math.floor(Math.random() * 3000) + 1;
     const url = `https://corsproxy.io/?https://xkcd.com/${randomComicNumber}/info.0.json`;
 
     fetch(url)
         .then(res => {
-            if (res.ok) {
-                return res.json();
-            } else {
-                throw new Error(`Error: ${res.status}`);
+            if (!res.ok) {
+                throw new Error(`HTTP error! status: ${res.status}`);
             }
+            return res.json();
         })
         .then(data => {
-            myData = data;
-
-            // Update the title
-            document.getElementById("title").innerHTML = myData.title;
-
-            // Update the comic image
+            document.getElementById("title").innerText = data.title;
             const comicImage = document.getElementById("comic");
-            comicImage.src = myData.img;
-            comicImage.alt = myData.alt;
-
-            // Update the publication date
-            document.getElementById("date").innerHTML = `Published on: ${myData.year}-${myData.month}-${myData.day}`;
+            comicImage.src = data.img;
+            comicImage.alt = data.alt;
+            document.getElementById("date").innerText = `Published on: ${data.year}-${data.month}-${data.day}`;
         })
         .catch(err => {
-            console.error(err);
+            console.error("Failed to fetch comic:", err);
+            alert("Could not load the comic. Please try again.");
         });
 }
 
