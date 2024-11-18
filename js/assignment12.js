@@ -18,7 +18,7 @@ function fetchData() {
         console.log(myData);
 
         //title
-        document.getElementById
+        document.getElementById("title").innerHTML
         //displayingthe comic
         document.getElementById("comic").src = myData.img;
         //document.getElementById("comic").
