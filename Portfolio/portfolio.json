@@ -3,12 +3,18 @@
       "title": "Ice Tea",
       "description": "This is the first project.",
       "technologies": ["HTML", "CSS", "JavaScript"],
-      "video": "/icetea.MP4"
+      "video": "https://drive.google.com/uc?id=13qGvPCZpoxxSbkOFNL89ApiZuwRCwm8g"
     },
     {
-      "title": "Project 2",
+      "title": "Laurena Beat",
       "description": "This is the second project.",
-      "technologies": ["HTML", "CSS"],
-      "video": "videos/project2.mp4"
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "video": "https://drive.google.com/uc?id=1ExHRilnA44qXixyS4T4Mou0J0QNvhFwP"
+    },
+    {
+      "title": "Memorabilia",
+      "description": "This is the third project.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "video": "https://drive.google.com/uc?id=1Fz2Bkmr4fUtjm4jftQGccg7lx9iNWKoh"
     }
   ]
