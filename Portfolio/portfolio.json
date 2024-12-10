@@ -1,0 +1,14 @@
+[
+    {
+      "title": "Ice Tea",
+      "description": "This is the first project.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "video": "/icetea.MP4"
+    },
+    {
+      "title": "Project 2",
+      "description": "This is the second project.",
+      "technologies": ["HTML", "CSS"],
+      "video": "videos/project2.mp4"
+    }
+  ]
