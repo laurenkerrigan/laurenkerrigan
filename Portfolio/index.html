@@ -21,6 +21,45 @@
     <h2>Welcome to my portfolio!</h2>
     <p>Click on any project to view it</p>
   </main>
+  <div class="carousel">
+    <div class="carousel-images">
+      <img src="and_even_when_im_wrong,_i_tend_to_think_i'm_right.jpg" alt="Image 1">
+      <img src="and_the_stars_are_hidden_by_my_pride_and_my_enemies.jpg" alt="Image 2">
+      <img src="And_too_tired_to_rage.jpg" alt="Image 3">
+      <img src="I_seem_to_hurt_the_people_that_care_the_most_.jpg" alt="Image 4">
+      <img src="it_feels_like,_feels_like_it's_coming.jpg" alt="image 5">
+      <img src="just_like_an_animal,_i_protect_my_pride.jpg" alt="Image 6">
+      <img src="well,_im_bored_of_the_game.jpg" alt="Image 7">
+    </div>
+    <button class="carousel-btn prev">&lt;</button>
+    <button class="carousel-btn next">&gt;</button>
+  </div>
+  <script>
+    const images = document.querySelector('.carousel-images');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+  
+    let currentIndex = 0;
+  
+    const updateCarousel = () => {
+      const imageWidth = images.children[0].clientWidth;
+      images.style.transform = `translateX(${-currentIndex * imageWidth}px)`;
+    };
+  
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.children.length;
+      updateCarousel();
+    });
+  
+    prevBtn.addEventListener('click', () => {
+      currentIndex =
+        (currentIndex - 1 + images.children.length) % images.children.length;
+      updateCarousel();
+    });
+  
+    window.addEventListener('resize', updateCarousel);
+  </script>
+  
   <script src="portfolio.js"></script>
 </body>
 </html>
