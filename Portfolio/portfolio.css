@@ -1,141 +1,141 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Navigation Bar */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:lightcoral;
+  color: white;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0;
+  background-color: coral;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: lightblue;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #777;
+  color: lightblue;
+}
+
+nav a.active {
+  background-color: #999;
+  color: coral;
+}
+
+/* Portfolio Container */
+#portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  background-color: lightblue
+}
+
+/* Project Card */
+.project {
+  background: coral;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 4px blue;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1em;
+  margin: 10px 0;
+  color: lightblue;
+}
+
+.project video {
+  max-width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.carousel img {
+  max-width: 100px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer (Optional) */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.project iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
   nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   nav li {
-    margin: 0 15px;
+    margin: 5px 0;
   }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 4px;
-    background-color: #555;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  nav a:hover {
-    background-color: #777;
-    color: #fff;
-  }
-  
-  nav a.active {
-    background-color: #999;
-    color: white;
-  }
-  
-  /* Portfolio Container */
-  #portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-  }
-  
-  /* Project Card */
+
   .project {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    width: 300px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+    width: 100%;
   }
-  
-  .project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .project p {
-    font-size: 1em;
-    margin: 10px 0;
-    color: #555;
-  }
-  
-  .project video {
-    max-width: 100%;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  /* Carousel */
-  .carousel {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  
-  .carousel img {
-    max-width: 100px;
-    margin: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
-  }
-  
-  .carousel img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Footer (Optional) */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav li {
-      margin: 5px 0;
-    }
-  
-    .project {
-      width: 100%;
-    }
-  }
+}

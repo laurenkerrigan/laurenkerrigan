@@ -1,20 +1,20 @@
 [
-    {
-      "title": "Ice Tea",
-      "description": "This is the first project.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "video": "https://drive.google.com/uc?id=13qGvPCZpoxxSbkOFNL89ApiZuwRCwm8g"
-    },
-    {
-      "title": "Laurena Beat",
-      "description": "This is the second project.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "video": "https://drive.google.com/uc?id=1ExHRilnA44qXixyS4T4Mou0J0QNvhFwP"
-    },
-    {
-      "title": "Memorabilia",
-      "description": "This is the third project.",
-      "technologies": ["HTML", "CSS", "JavaScript"],
-      "video": "https://drive.google.com/uc?id=1Fz2Bkmr4fUtjm4jftQGccg7lx9iNWKoh"
-    }
-  ]
+  {
+    "title": "Ice Tea",
+    "description": "This is the first project.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "video": "https://youtu.be/BZ0Z9_FQ2yA"
+  },
+  {
+    "title": "Laurena Beat",
+    "description": "This is the second project.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "video": "https://youtu.be/lCYSFbRAgdM"
+  },
+  {
+    "title": "Memorabilia",
+    "description": "This is the third project.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "video": "https://youtu.be/hsxVhzxYMhw"
+  }
+]
