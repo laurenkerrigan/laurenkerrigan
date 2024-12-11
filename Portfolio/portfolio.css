@@ -3,8 +3,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color:lightcoral;
+  background-color: lightcoral;
   color: white;
+  text-align: center; /* Center all text globally */
 }
 
 /* Navigation Bar */
@@ -48,7 +49,8 @@ nav a.active {
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  background-color: lightblue
+  background-color: lightblue;
+  text-align: center; /* Center text within the container */
 }
 
 /* Project Card */
@@ -60,7 +62,7 @@ nav a.active {
   width: 300px;
   box-shadow: 0 2px 4px blue;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
+  text-align: center; /* Center text within each project card */
 }
 
 .project:hover {
@@ -79,11 +81,16 @@ nav a.active {
   color: lightblue;
 }
 
-.project video {
-  max-width: 100%;
-  margin: 10px 0;
+.project iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
+  margin: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center iframe within the card */
 }
 
 /* Carousel */
@@ -113,15 +120,6 @@ footer {
   text-align: center;
   padding: 10px;
   margin-top: 20px;
-}
-
-.project iframe {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 10px 0;
 }
 
 /* Responsive Design */
